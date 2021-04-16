@@ -18,6 +18,29 @@
   
   <entry>
     <title></title>
+    <link href="http://example.com/2021/04/16/asd/"/>
+    <id>http://example.com/2021/04/16/asd/</id>
+    <published>2021-04-16T11:29:54.838Z</published>
+    <updated>2021-03-15T12:49:13.026Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="网页技术概念"><a href="#网页技术概念" class="headerlink" title="网页技术概念"></a>网页技术概念</h3><ol><li>网页技术也称Web技术，适用于开发网页应用程序的技术</li></ol><h3 id="Web程序的发展"><a href="#Web程序的发展" class="headerlink" title="Web程序的发展"></a>Web程序的发展</h3><ol><li>C/S模式<ol><li>客户/服务器模式</li><li>缺陷：需要客户端</li></ol></li><li>B/S模式<ol><li>浏览器/服务器模式：只需要浏览器就可以完成操作</li><li>报文段格式统一，http协议</li></ol></li></ol><h3 id="统一资源定位器URL"><a href="#统一资源定位器URL" class="headerlink" title="统一资源定位器URL"></a>统一资源定位器URL</h3><ol><li>是对可以从因特网上得到的资源的位置和访问方法的一种简介的表示</li><li>&lt; URL的访问方式 &gt;://&lt; 主机 &gt;:&lt; 端口 &gt;/&lt; 路径&gt;</li><li>http协议默认端口80，程序必须使用端口号才能让另一台计算机访问，可以省略</li><li>URL中的字符大小写不敏感</li><li>tomcat默认端口8080</li></ol><h3 id="网页技术"><a href="#网页技术" class="headerlink" title="网页技术"></a>网页技术</h3><ol><li>静态网页与动态网页技术相对，静态网页一旦编写成功除非修改源码，否则内容不会改变，动态网页显示的内容可以随着时间环境或者数据库操作的结果而发生改变</li><li>静态网页常用技术：html，css，JavaScript</li><li>动态网页常用技术：ASP，ASP.NET，PHP，JSP，Python，nodejs</li><li>Apache：静态服务器，可以添加模块</li></ol><h3 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h3><ol><li>定义：超文本传输协议，是互联网上应用最为广泛的一种网络协议。用于定义客户端和服务器之间交换数据的过程</li><li>作用：可以使浏览器和服务器之间更高效的传输数据。不仅保证计算机正确快速的传输超文本文档，还确定传输文档中的哪一部分，以及拿一部分内容首先显示</li><li>特点：基于请求-响应模型，先有请求后有响应</li><li>组成<ol><li>HTTP请求协议：请求行，请求头，请求体</li><li>HTTP响应协议：相应行，响应头，响应体</li></ol></li><li>HTTP请求<ol><li>客户端连上服务器之后，向服务器请求某个web资源，称之客户端向服务器发送了一个HTTP请求</li><li>请求头和请求体内容之间要用空行隔开</li><li>请求行<ol><li>请求行包括HTTP的请求方式，请求资源名称以及HTTP版本</li><li>格式：请求方式 资源路径 协议/版本</li><li>请求方式：常见请求方式POST，GET，DELETE，PUT</li><li>GET请求<ol><li>向服务器的特定资源发出查询请求，一般用于查询数据和资源的请求，如在地址栏中输入URL</li><li>GET请求查询的参数可以在浏览器的地址栏中显示</li><li>请求的数据回复加在URL之后，以?分割URL和传输数据，多个参数用&amp;链接</li><li>没有请求体，所有数据都在请求行中</li><li>在实际开发中，对于GET请求，特定的浏览器和服务器对URL的长度有限制。因此，在使用GET请求时，传输数据会受到URL长度的限制</li></ol></li><li>POST请求<ol><li>向服务器提交数据，一般用在客户端将本地数据或者资源提交给服务器，例如注册用户，将用户信息提交给服务器</li><li>POST请求会把请求的数据放置在HTTP请求体中，可以起到保护隐私的作用，涉及到隐私信息的数据传递需要使用POST</li><li>由于不是URL传值，理论上传输数据长度是不受限制的</li></ol></li><li>DELETE请求：用于删除数据</li><li>PUT请求：用于更新数据</li></ol></li><li>请求头<ol><li>用于描述客户端请求哪台主机，以机客户端的一些环境信息等，请求头以键值对方式传递数据</li></ol></li><li>请求体<ol><li>代表着浏览器在post请求方式中传递给服务器的参数，请求体中的每一个数据都是使用键值对形式，多个值用&amp;链接，服务器在接收到请求体后需要单独解析，HTTP不会对其做出解析</li></ol></li></ol></li><li>HTTP响应<ol><li>一个HTTP相应代表服务器向客户端回送的数据，其中的一些响应头和响应体的内容都是可选的，响应头和响应体内容之间要用空行隔开。</li><li>响应行<ol><li>包含了HTTP协议的版本，以及用于描述服务器对请求的处理结果</li><li>格式：协议/版本 状态码 状态码描述</li><li>状态码：服务器和浏览器用于确定状态的固定数字号码<ol><li>200：请求成功</li><li>302：请求重定向</li><li>404：请求资源不存在，通常是访问路径写错了，或者时服务器删除了该资源</li><li>500：服务器内部发生错误</li></ol></li></ol></li><li>响应头<ol><li>响应头用于描述服务器的基本信息，以及数据的描述，服务器通过这些数据的描述信息，可以通知客户端如何处理等一会儿它回送的数据</li></ol></li><li>响应体<ol><li>代表服务器向客户端浏览器回送的正文</li></ol></li></ol></li></ol><h3 id="Servlet"><a href="#Servlet" class="headerlink" title="Servlet"></a>Servlet</h3><ol><li>是用Java编写的服务器端程序，其主要功能在于交互式地浏览和修改数据，生成动态Web内容。狭义的Servlet是指Java语言实现的一个接口，广义的Servlet是指任何实现了这个Servlet接口的类，一般情况下，默认为后者</li><li>Servlet是JavaWeb的核心程序，是JavaWeb的三大组件之一（Servlet，Filter，Listener）</li><li>在HTTP请求过程中会把请求的参数存放在请求行的URL中，或者是请求体中，这个参数需要服务器来接受解析并处理，奖处理的结果通过响应发送到客户端</li><li>Servlet3.0<ol><li>异步处理支持</li><li>新增的注解支持，新增若干注解，用于简化Servlet，过滤器和监听器的声明</li><li>可插性支持</li></ol></li><li>生命周期<ol><li>Servlet从创建到销毁的过程</li><li>init(ServletConfig)方法，初始化方法</li><li>service(ServiceRequest,ServletResponse)方法，每次访问都会调用处理请求</li><li>destory()方法，销毁servlet方法，当服务器关闭或者项目被移除服务器，destory方法会执行，生命周期结束</li></ol></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;网页技术概念&quot;&gt;&lt;a href=&quot;#网页技术概念&quot; class=&quot;headerlink&quot; title=&quot;网页技术概念&quot;&gt;&lt;/a&gt;网页技术概念&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;网页技术也称Web技术，适用于开发网页应用程序的技术&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;We</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="http://example.com/2021/04/16/%E7%BD%91%E9%A1%B5%E6%8A%80%E6%9C%AF%E6%A6%82%E5%BF%B5/"/>
     <id>http://example.com/2021/04/16/%E7%BD%91%E9%A1%B5%E6%8A%80%E6%9C%AF%E6%A6%82%E5%BF%B5/</id>
     <published>2021-04-16T10:57:42.375Z</published>
