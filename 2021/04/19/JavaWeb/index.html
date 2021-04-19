@@ -6,18 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>JavaWeb.Servlet | JuuustJayの博客</title>
+  <title>JavaWeb | JuuustJayの博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="网页技术概念  网页技术也称Web技术，适用于开发网页应用程序的技术">
+  <meta name="description" content="JavaWeb">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaWeb.Servlet">
-<meta property="og:url" content="http://example.com/2021/04/19/JavaWeb-Servlet/index.html">
+<meta property="og:title" content="JavaWeb">
+<meta property="og:url" content="http://example.com/2021/04/19/JavaWeb/index.html">
 <meta property="og:site_name" content="JuuustJayの博客">
-<meta property="og:description" content="网页技术概念  网页技术也称Web技术，适用于开发网页应用程序的技术">
+<meta property="og:description" content="JavaWeb">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2021/04/19/image/JavaWeb-Servlet/2021-4-19_2.jpg">
-<meta property="article:published_time" content="2021-04-19T03:00:26.000Z">
-<meta property="article:modified_time" content="2021-04-19T10:17:15.819Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/juuustjay/imageCloud/main/img/JavaWeb_2.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/juuustjay/imageCloud/main/img/JavaWeb_3.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/juuustjay/imageCloud/main/img/JavaWeb_4.jpg">
+<meta property="article:published_time" content="2021-04-19T11:53:48.000Z">
+<meta property="article:modified_time" content="2021-04-19T11:57:23.098Z">
 <meta property="article:author" content="JuuustJay">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2021/04/19/image/JavaWeb-Servlet/2021-4-19_2.jpg">
@@ -156,7 +159,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-JavaWeb-Servlet" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JavaWeb" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -164,137 +167,86 @@
 		
   
     <h1 class="article-title" itemprop="name">
-      JavaWeb.Servlet
+      JavaWeb
     </h1>
   
 
       -->  
 		
-        <a href="/2021/04/19/JavaWeb-Servlet/" class="archive-article-date">
-  	<time datetime="2021-04-19T03:00:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-19</time>
+        <a href="/2021/04/19/JavaWeb/" class="archive-article-date">
+  	<time datetime="2021-04-19T11:53:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="网页技术概念"><a href="#网页技术概念" class="headerlink" title="网页技术概念"></a>网页技术概念</h3><img src="../image/JavaWeb-Servlet/2021-4-19_2.jpg" style="width:20%;height:20%" />
+        <h1 id="JavaWeb"><a href="#JavaWeb" class="headerlink" title="JavaWeb"></a>JavaWeb</h1><p></br><img src="../image/JavaWeb-Servlet/2021-4-19_2.jpg" style="width:20%;height:20%" /></p>
+<p></br><span id="more"></span></p>
+<h2 id="1、基本概念"><a href="#1、基本概念" class="headerlink" title="1、基本概念"></a>1、基本概念</h2><h3 id="1-1、前言"><a href="#1-1、前言" class="headerlink" title="1.1、前言"></a>1.1、前言</h3><p>web开发：</p>
+<ul>
+<li>web,网页</li>
+<li>静态web<ul>
+<li>html,css</li>
+<li>提供给所有人看的数据始终不会发生变化</li>
+</ul>
+</li>
+<li>动态web<ul>
+<li>淘宝，几乎所有网站</li>
+<li>会发生变化，不同的人在不同时间不同地点看到的信息各不相同</li>
+<li>技术栈：Servlet/JSP，ASP，PHP</li>
+</ul>
+</li>
+</ul>
+<p>在Java中，动态web资源开发的技术统称为JavaWeb</p>
+<h3 id="1-2、web应用程序"><a href="#1-2、web应用程序" class="headerlink" title="1.2、web应用程序"></a>1.2、web应用程序</h3><p>web应用程序 ：可以提供浏览器访问的程序</p>
+<ul>
+<li>a.html、b.html等多个web资源，这些web资源可以被外界访问，对外界提供服务</li>
+<li>能访问到的任何一个页面或者资源，都存在于这个世界的某一个角落的计算机上</li>
+<li>URL：统一资源定位符</li>
+<li>这些统一的web资源会被放在同一个文件夹下，web应用程序–&gt;Tomcat服务器</li>
+<li>一个web应用由多部份组成（静态web，动态web）<ul>
+<li>html，css，js</li>
+<li>jsp，servlet</li>
+<li>java程序</li>
+<li>jar包</li>
+<li>配置文件（Properties）</li>
+</ul>
+</li>
+</ul>
+<p>web应用程序编写完毕后，想要提供给外界访问：需要一个服务器来统一管理</p>
+<h3 id="1-3、静态web"><a href="#1-3、静态web" class="headerlink" title="1.3、静态web"></a>1.3、静态web</h3><ul>
+<li>.htm,.html都是网页的后缀，如果服务器上一直存在这些东西，我们就可以直接进行读取访问</li>
+</ul>
+<img src="https://raw.githubusercontent.com/juuustjay/imageCloud/main/img/JavaWeb_2.jpg" style="width:75%;height:40%;" />
 
-<p>网页技术也称Web技术，适用于开发网页应用程序的技术 </p>
-<span id="more"></span>
+<ul>
+<li>静态web存在的缺点<ul>
+<li>Web页面无法动态更新，所有用户看到的都是同一个页面<ul>
+<li>轮播图，点击特效实现伪动态</li>
+<li>JavaScript（实际开发中应用最多）</li>
+<li>VBScript</li>
+</ul>
+</li>
+<li>无法与数据交互（数据无法持久化，用户无法交互）</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-4、动态web"><a href="#1-4、动态web" class="headerlink" title="1.4、动态web"></a>1.4、动态web</h3><p>页面会动态展示，展示效果因人而异</p>
+<img src="https://raw.githubusercontent.com/juuustjay/imageCloud/main/img/JavaWeb_3.jpg" style="width:100%;" />
 
-<h3 id="Web程序的发展"><a href="#Web程序的发展" class="headerlink" title="Web程序的发展"></a>Web程序的发展</h3><ol>
-<li>C/S模式<ol>
-<li>客户/服务器模式</li>
-<li>缺陷：需要客户端</li>
-</ol>
+<ul>
+<li>缺点<ul>
+<li>加入服务器的动态web资源出现了错误，我们需要重新编写我们的后台程序，重新发布（网站的停机维护）</li>
+</ul>
 </li>
-<li>B/S模式<ol>
-<li>浏览器/服务器模式：只需要浏览器就可以完成操作</li>
-<li>报文段格式统一，http协议</li>
-</ol>
-</li>
-</ol>
-<h3 id="统一资源定位器URL"><a href="#统一资源定位器URL" class="headerlink" title="统一资源定位器URL"></a>统一资源定位器URL</h3><ol>
-<li>是对可以从因特网上得到的资源的位置和访问方法的一种简介的表示</li>
-<li>&lt; URL的访问方式 &gt;://&lt; 主机 &gt;:&lt; 端口 &gt;/&lt; 路径&gt;</li>
-<li>http协议默认端口80，程序必须使用端口号才能让另一台计算机访问，可以省略</li>
-<li>URL中的字符大小写不敏感</li>
-<li>tomcat默认端口8080</li>
-</ol>
-<h3 id="网页技术"><a href="#网页技术" class="headerlink" title="网页技术"></a>网页技术</h3><ol>
-<li>静态网页与动态网页技术相对，静态网页一旦编写成功除非修改源码，否则内容不会改变，动态网页显示的内容可以随着时间环境或者数据库操作的结果而发生改变</li>
-<li>静态网页常用技术：html，css，JavaScript</li>
-<li>动态网页常用技术：ASP，ASP.NET，PHP，JSP，Python，nodejs</li>
-<li>Apache：静态服务器，可以添加模块</li>
-</ol>
-<h3 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h3><ol>
-<li>定义：超文本传输协议，是互联网上应用最为广泛的一种网络协议。用于定义客户端和服务器之间交换数据的过程</li>
-<li>作用：可以使浏览器和服务器之间更高效的传输数据。不仅保证计算机正确快速的传输超文本文档，还确定传输文档中的哪一部分，以及拿一部分内容首先显示</li>
-<li>特点：基于请求-响应模型，先有请求后有响应</li>
-<li>组成<ol>
-<li>HTTP请求协议：请求行，请求头，请求体</li>
-<li>HTTP响应协议：相应行，响应头，响应体</li>
-</ol>
-</li>
-<li>HTTP请求<ol>
-<li>客户端连上服务器之后，向服务器请求某个web资源，称之客户端向服务器发送了一个HTTP请求</li>
-<li>请求头和请求体内容之间要用空行隔开</li>
-<li>请求行<ol>
-<li>请求行包括HTTP的请求方式，请求资源名称以及HTTP版本</li>
-<li>格式：请求方式 资源路径 协议/版本</li>
-<li>请求方式：常见请求方式POST，GET，DELETE，PUT</li>
-<li>GET请求<ol>
-<li>向服务器的特定资源发出查询请求，一般用于查询数据和资源的请求，如在地址栏中输入URL</li>
-<li>GET请求查询的参数可以在浏览器的地址栏中显示</li>
-<li>请求的数据回复加在URL之后，以?分割URL和传输数据，多个参数用&amp;链接</li>
-<li>没有请求体，所有数据都在请求行中</li>
-<li>在实际开发中，对于GET请求，特定的浏览器和服务器对URL的长度有限制。因此，在使用GET请求时，传输数据会受到URL长度的限制</li>
-</ol>
-</li>
-<li>POST请求<ol>
-<li>向服务器提交数据，一般用在客户端将本地数据或者资源提交给服务器，例如注册用户，将用户信息提交给服务器</li>
-<li>POST请求会把请求的数据放置在HTTP请求体中，可以起到保护隐私的作用，涉及到隐私信息的数据传递需要使用POST</li>
-<li>由于不是URL传值，理论上传输数据长度是不受限制的</li>
-</ol>
-</li>
-<li>DELETE请求：用于删除数据</li>
-<li>PUT请求：用于更新数据</li>
-</ol>
-</li>
-<li>请求头<ol>
-<li>用于描述客户端请求哪台主机，以机客户端的一些环境信息等，请求头以键值对方式传递数据</li>
-</ol>
-</li>
-<li>请求体<ol>
-<li>代表着浏览器在post请求方式中传递给服务器的参数，请求体中的每一个数据都是使用键值对形式，多个值用&amp;链接，服务器在接收到请求体后需要单独解析，HTTP不会对其做出解析</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>HTTP响应<ol>
-<li>一个HTTP相应代表服务器向客户端回送的数据，其中的一些响应头和响应体的内容都是可选的，响应头和响应体内容之间要用空行隔开。</li>
-<li>响应行<ol>
-<li>包含了HTTP协议的版本，以及用于描述服务器对请求的处理结果</li>
-<li>格式：协议/版本 状态码 状态码描述</li>
-<li>状态码：服务器和浏览器用于确定状态的固定数字号码<ol>
-<li>200：请求成功</li>
-<li>302：请求重定向</li>
-<li>404：请求资源不存在，通常是访问路径写错了，或者时服务器删除了该资源</li>
-<li>500：服务器内部发生错误</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>响应头<ol>
-<li>响应头用于描述服务器的基本信息，以及数据的描述，服务器通过这些数据的描述信息，可以通知客户端如何处理等一会儿它回送的数据</li>
-</ol>
-</li>
-<li>响应体<ol>
-<li>代表服务器向客户端浏览器回送的正文</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="Servlet"><a href="#Servlet" class="headerlink" title="Servlet"></a>Servlet</h3><ol>
-<li>是用Java编写的服务器端程序，其主要功能在于交互式地浏览和修改数据，生成动态Web内容。狭义的Servlet是指Java语言实现的一个接口，广义的Servlet是指任何实现了这个Servlet接口的类，一般情况下，默认为后者</li>
-<li>Servlet是JavaWeb的核心程序，是JavaWeb的三大组件之一（Servlet，Filter，Listener）</li>
-<li>在HTTP请求过程中会把请求的参数存放在请求行的URL中，或者是请求体中，这个参数需要服务器来接受解析并处理，奖处理的结果通过响应发送到客户端</li>
-<li>Servlet3.0<ol>
-<li>异步处理支持</li>
-<li>新增的注解支持，新增若干注解，用于简化Servlet，过滤器和监听器的声明</li>
-<li>可插性支持</li>
-</ol>
-</li>
-<li>生命周期<ol>
-<li>Servlet从创建到销毁的过程</li>
-<li>init(ServletConfig)方法，初始化方法</li>
-<li>service(ServiceRequest,ServletResponse)方法，每次访问都会调用处理请求</li>
-<li>destory()方法，销毁servlet方法，当服务器关闭或者项目被移除服务器，destory方法会执行，生命周期结束</li>
-</ol>
-</li>
-</ol>
+</ul>
+<img src="https://raw.githubusercontent.com/juuustjay/imageCloud/main/img/JavaWeb_4.jpg" style="width:100%;" />
+
+<ul>
+<li>Web页面可以动态更新，不同用户看到不同页面</li>
+<li>可以与数据库交互（数据持久化：注册，商品信息，用户信息等）</li>
+</ul>
 
       
 
@@ -374,7 +326,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/19/JavaWeb-Servlet/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/19/JavaWeb/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -417,7 +369,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5%E6%8A%80%E6%9C%AF%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">网页技术概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Web%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8F%91%E5%B1%95"><span class="toc-number">2.</span> <span class="toc-text">Web程序的发展</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E5%AE%9A%E4%BD%8D%E5%99%A8URL"><span class="toc-number">3.</span> <span class="toc-text">统一资源定位器URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E9%A1%B5%E6%8A%80%E6%9C%AF"><span class="toc-number">4.</span> <span class="toc-text">网页技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTTP"><span class="toc-number">5.</span> <span class="toc-text">HTTP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Servlet"><span class="toc-number">6.</span> <span class="toc-text">Servlet</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaWeb"><span class="toc-number">1.</span> <span class="toc-text">JavaWeb</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">1、基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E3%80%81%E5%89%8D%E8%A8%80"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1、前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2%E3%80%81web%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.2、web应用程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3%E3%80%81%E9%9D%99%E6%80%81web"><span class="toc-number">1.1.3.</span> <span class="toc-text">1.3、静态web</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4%E3%80%81%E5%8A%A8%E6%80%81web"><span class="toc-number">1.1.4.</span> <span class="toc-text">1.4、动态web</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
